@@ -69,6 +69,11 @@ module cla4(
   and #(2) g_tc4_4 (t_c4_4, p3, p2, p1, p0, cin);
   or  #(2) g_cout  (cout, g3, t_c4_1, t_c4_2, t_c4_3, t_c4_4);
 
-  
+  xor #(2) g_s0 (sum[0], p0, cin);
+  xor #(2) g_s1 (sum[1], p1, c1);
+  xor #(2) g_s2 (sum[2], p2, c2);
+  xor #(2) g_s3 (sum[3], p3, c3);
+
+
 
 endmodule
